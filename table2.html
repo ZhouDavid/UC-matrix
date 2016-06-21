@@ -1,0 +1,136 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="./node_modules/datatables.net/js/jquery.dataTables.js"></script>
+ -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/select/1.2.0/js/dataTables.select.min.js"></script>
+    <script type="text/javascript" src="dataTables.editor.min.js"></script>
+    <script type="text/javascript" src="mytable.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="section">
+      <div class="container"></div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <a class="btn btn-info" id="add_row">Add Row</a>
+            <a class="btn btn-info" id="add_col">Add Column</a>
+            <a class="btn btn-info" id="delete_row">Delete Row</a>
+            <a class="btn btn-info" id="delete_col">Delete Column</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-left">
+            <table id="example" class="table">
+              <thead>
+                <tr id="header">
+                  <th class="warning"></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_1'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_2'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_3'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_4'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_5'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_6'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_7'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_8'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_9'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_10'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_11'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_12'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_13'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_14'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_15'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_16'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_17'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_18'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_19'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_20'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_21'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_22'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_23'  type='checkbox'/></div></div></th>
+                  <th class="info"><div class='row'><div class='col-md-8' contenteditable='true'>title</div>
+                  <div class='col-md-2'><input id='ccheck_24'  type='checkbox'/></div></div></th>
+                </tr>
+              </thead>
+             <!--  <tbody>
+                <tr id="row_1">
+                  <td>1　
+                    <input id="rcheck_1" type="checkbox">
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr id="row_2">
+                  <td>2　
+                    <input id="rcheck_2" type="checkbox">
+                  </td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr id="row_3">
+                  <td>3　
+                    <input id="rcheck_3" type="checkbox">
+                  </td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody> -->
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('#add_row').click(addRow);
+      $('#delete_row').click(deleteRows);
+      $('#add_col').click(addCol);
+      $('#delete_col').click(deleteCols);
+    </script>
+  
+
+</body></html>
